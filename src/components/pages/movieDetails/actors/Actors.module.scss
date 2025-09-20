@@ -1,0 +1,92 @@
+.actors {
+  padding-block: 2rem;
+  position: relative;
+  @media (max-width: 768px) {
+    padding-block: 0rem;
+    padding-bottom: 0;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-block: 1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+
+.blockWrapper {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+  padding-inline: 0.2rem;
+}
+
+.block {
+  width: 13vw;
+  height: 40vh;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px #10002b7e;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  @media (max-width: 768px) {
+    width: 20vw;
+  }
+  @media (max-width: 576px) {
+    height: 32vh;
+  }
+  @media (max-width: 496px) {
+    width: 32vw;
+  }
+  @media (max-width: 378px) {
+    height: 28vh;
+  }
+
+  img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .info {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    @media (max-width: 378px) {
+      bottom: 7%;
+      gap: 0.1rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      @media (max-width: 768px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

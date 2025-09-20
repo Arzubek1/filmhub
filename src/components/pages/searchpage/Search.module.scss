@@ -1,0 +1,51 @@
+$fullBG: #10002b;
+
+.Search{
+    padding-block: 8rem;
+    background: $fullBG;
+    min-height: 90vh;
+    h2{
+      span{
+        color: #f0a500;
+      }
+        color: white;
+        padding-bottom: 4rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .notFound {
+  text-align: center;
+  margin-top: 3rem;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #f1faee;
+    text-transform: uppercase;
+  }
+
+  button {
+    padding: 0.8rem 1.6rem;
+    background: #212cf6;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: #0d17d2;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-items: start; 
+}
+
+}

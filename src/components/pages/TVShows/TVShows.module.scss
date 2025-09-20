@@ -1,0 +1,53 @@
+$fullBG: #10002b;
+
+.TVShows {
+  padding-block: 8rem;
+  background: $fullBG;
+  min-height: 100vh;
+  @media (max-width: 769px) {
+    padding-block: 4rem;
+  }
+  @media (max-width: 424px) {
+    padding-block: 2rem;
+  }
+
+  h2 {
+    color: white;
+    padding-block: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    @media (max-width: 768px) {
+      font-size: 2.1rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 426px) {
+      font-size: 1.3rem;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: start;
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    @media (max-width: 496px) {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    @media (max-width: 496px) {
+      transform: translateX(3%);
+    }
+    @media (max-width: 387px) {
+      transform: translateX(-0.7%);
+    }
+    @media (max-width: 378px) {
+      transform: translateX(1.2%);
+    }
+    @media (max-width: 378px) {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
+}

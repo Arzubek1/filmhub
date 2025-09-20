@@ -1,0 +1,115 @@
+.footer {
+  background: #111;
+  color: #bbb;
+  padding: 2rem 0 1rem;
+  //   margin-top: 3rem;
+@media (max-width: 768px) {
+  padding: .7rem 0 0.8rem;
+}
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    @media (max-width: 768px) {
+      gap: 1rem;
+      padding-bottom: 0;
+    }
+  }
+
+  .brand {
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;   // Safari & Chrome
+  -webkit-text-fill-color: transparent;
+  color: transparent; // Firefox үчүн
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 501px) {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  
+}
+
+    p {
+      font-size: 0.9rem;
+      color: #aaa;
+      @media (max-width: 768px) {
+        font-size: 0.7rem;
+      }
+       @media (max-width: 501px) {
+        font-size: 0.6rem;
+      }
+      
+    }
+  }
+
+  .links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+@media (max-width: 501px) {
+  display: none;
+}
+    li a {
+      color: #bbb;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ff4444;
+      }
+      @media (max-width: 768px) {
+        font-size: 0.74rem;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: #bbb;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ff4444;
+      }
+      @media (max-width: 501px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .copy {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    @media (max-width: 768px) {
+      font-size: 0.6rem;
+    }
+     @media (max-width: 422px) {
+      margin-top: .2rem;
+      font-size: 0.4rem;
+    }
+    
+  }
+}

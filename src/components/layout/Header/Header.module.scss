@@ -1,0 +1,205 @@
+$main-color: #10002b9e;
+$white-color: #f1faee;
+$yellow-color: #f0a500;
+
+.Header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: #1e262f5f;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+  padding-block: 13px;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.139);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: $main-color;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  &.hidden {
+    transform: translateY(-100%);
+  }
+  @media (max-width: 541px) {
+    width: 100%;
+    height: 60px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+  @media (max-width: 554px) {
+    width: 68%;
+  }
+  @media (max-width: 547px) {
+    width: 67%;
+  }
+  @media (max-width: 543px) {
+    width: 66.8%;
+  }
+  @media (max-width: 542px) {
+    width: 100%;
+  }
+  @media (max-width: 436px) {
+    height: 52px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 100px;
+      height: 80px;
+      object-fit: contain;
+      cursor: pointer;
+      @media (max-width: 576px) {
+        transform: translateX(-40%);
+        
+      }
+      @media (max-width: 436px) {
+        height: 52px;
+        transform: translateX(-40%);
+      }
+    }
+    .laptopNav {
+      display: flex;
+      align-items: center;
+      gap: 8rem;
+      @media (max-width: 992px) {
+        gap: 4rem;
+        margin-right: 2rem;
+      }
+
+      @media (max-width: 576px) {
+        display: none;
+      }
+      .toMovie {
+        color: $white-color;
+        cursor: pointer;
+        &:hover {
+          color: $yellow-color;
+        }
+      }
+    }
+
+    .burgerMenu {
+      display: none;
+      .iconMenu {
+        --gap: 5px;
+        --height-bar: 2.5px;
+        --pos-y-bar-one: 0;
+        --pos-y-bar-three: 0;
+        --scale-bar: 1;
+        --rotate-bar-one: 0;
+        --rotate-bar-three: 0;
+
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        cursor: pointer;
+        position: relative;
+        @media (max-width: 436px) {
+        width: 22px;
+        transform: translateX(50%);
+        }
+      }
+
+      .bar {
+        position: relative;
+        height: var(--height-bar);
+        width: 100%;
+        border-radius: 0.5rem;
+        background-color: #9941fc;
+      }
+
+      .bar1 {
+        top: var(--pos-y-bar-one);
+        transform: rotate(var(--rotate-bar-one));
+        transition: top 200ms 100ms, transform 100ms;
+      }
+
+      .bar2 {
+        transform: scaleX(var(--scale-bar));
+        transition: transform 150ms 100ms;
+      }
+
+      .bar3 {
+        bottom: var(--pos-y-bar-three);
+        transform: rotate(var(--rotate-bar-three));
+        transition: bottom 200ms 100ms, transform 100ms;
+      }
+
+      .checkIcon:checked + .iconMenu > .bar1 {
+        transition: top 200ms, transform 200ms 100ms;
+      }
+
+      .checkIcon:checked + .iconMenu > .bar3 {
+        transition: bottom 200ms, transform 200ms 100ms;
+      }
+
+      .checkIcon:checked + .iconMenu {
+        --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+        --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+        --scale-bar: 0;
+        --rotate-bar-one: 45deg;
+        --rotate-bar-three: -45deg;
+      }
+      @media (max-width: 576px) {
+        display: flex;
+      }
+    }
+  }
+}
+
+.phoneNav {
+  position: fixed;
+  top: 0;
+  left: -100%; // башында көрүнбөйт
+  width: 70vw;
+  height: 100%;
+  background: #1e262fe2;
+  backdrop-filter: blur(4px);
+  display: none; // default: көрүнбөйт
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  padding: 2rem;
+  padding-top: 3rem;
+  gap: 0.5rem;
+  transition: left 0.4s ease-in-out;
+  z-index: 999;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 3rem;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    height: 7vh;
+    &:hover {
+      color: $yellow-color;
+      background: #10002b93;
+    }
+  }
+
+  &.active {
+    left: 0; // ачылганда чыгат
+  }
+
+  @media (max-width: 576px) {
+    display: flex; // мобилкада гана чыгат
+  }
+}
