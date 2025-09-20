@@ -37,15 +37,24 @@ $fullBG: #10002b;
     @media (max-width: 496px) {
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
+     @media (max-width: 384px) {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
     @media (max-width: 496px) {
       transform: translateX(3%);
     }
+    @media (max-width: 393px) {
+      transform: translateX(0);
+    }
+    
     @media (max-width: 387px) {
       transform: translateX(-0.7%);
     }
-    @media (max-width: 378px) {
-      transform: translateX(1.2%);
+     @media (max-width: 384px) {
+      transform: translateX(-.8%);
     }
+    
     @media (max-width: 378px) {
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }

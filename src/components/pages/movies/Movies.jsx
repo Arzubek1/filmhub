@@ -46,7 +46,7 @@ console.log(movies, "movies");
         );
 
   return (
-    <section id={scss.Movies}>
+    <section className={scss.Movies}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.title}>

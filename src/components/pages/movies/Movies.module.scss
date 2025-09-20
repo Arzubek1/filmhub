@@ -1,6 +1,6 @@
 $fullBG: #10002b;
 
-#Movies {
+.Movies {
   padding-block: 7rem;
   background: $fullBG;
   min-height: 100vh;
@@ -11,6 +11,14 @@ $fullBG: #10002b;
     @media (max-width: 386px) {
       transform: translateX(2.3%);
     }
+    @media (max-width: 468px) {
+      transform: translateX(1.5%);
+    }
+    @media (max-width: 398px) {
+      transform: translateX(.2%);
+    }
+    
+
     .title {
       display: flex;
       align-items: center;
@@ -29,13 +37,13 @@ $fullBG: #10002b;
           font-size: 1.2rem;
           transform: translateX(-18%);
         }
-
       }
       @media (max-width: 386px) {
         justify-content: space-around;
         gap: 90px;
         padding-bottom: 1.8rem;
       }
+
       .category {
         display: flex;
         flex-direction: column;
@@ -78,6 +86,10 @@ $fullBG: #10002b;
       @media (max-width: 768px) {
         grid-template-columns: repeat(auto-fill, minmax(28vw, 1fr));
       }
+      @media (max-width: 468px) {
+        grid-template-columns: repeat(auto-fill, minmax(32vw, 1fr));
+      }
+
       @media (max-width: 419px) {
         grid-template-columns: repeat(auto-fill, minmax(44vw, 1fr));
       }

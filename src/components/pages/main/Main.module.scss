@@ -119,6 +119,12 @@ $yellow-color: #f0a500;
         height: 5vh;
         width: 76vw;
       }
+      @media (max-height: 623px) {
+        min-height: 30px;
+      }
+      @media (max-height: 468px) {
+        min-height: 36px;
+      }
 
       input {
         position: absolute;
@@ -139,10 +145,10 @@ $yellow-color: #f0a500;
           }
         }
         @media (max-width: 576px) {
-          font-size: 0.7rem;
+          font-size: 1rem;
         }
-        @media (max-width: 426px) {
-          font-size: 0.8rem;
+        @media (max-height: 468px) {
+          padding-top: 1rem;
         }
       }
 

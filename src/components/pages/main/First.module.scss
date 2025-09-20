@@ -16,16 +16,19 @@
     @media (max-width: 768px) {
       width: 22vw;
     }
-     @media (max-width: 768px) {
+    @media (max-width: 768px) {
       width: 26vw;
     }
-    
+
     @media (max-width: 496px) {
       height: 3.8vh;
       transform: translateY(160%);
     }
     @media (max-width: 496px) {
       width: 27vw;
+    }
+    @media (max-height: 623px) {
+height: 26px;
     }
 
     .bg {
@@ -43,19 +46,19 @@
       border-radius: inherit;
       transition: all 0.4s ease;
       @media (max-width: 388px) {
-       top: 6%;
-       }
+        top: 6%;
+      }
     }
-    .activebg{
+    .activebg {
       transform: translateX(104px);
       @media (max-width: 576px) {
-      transform: translateX(78px);
+        transform: translateX(78px);
       }
       @media (max-width: 498px) {
-      transform: translateX(54px);
+        transform: translateX(54px);
       }
       @media (max-width: 388px) {
-      transform: translateX(55px);
+        transform: translateX(55px);
       }
     }
 

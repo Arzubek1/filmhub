@@ -28,12 +28,26 @@ $hoverBG: #b9b9bcbe;
   width: 38vw;
   height: 34vh;
 }
+@media (max-width: 468px) {
+  width: 42vw;
+  height: 37vh;
+}
+
 @media (max-width: 419px) {
   width: 44vw;
-  height: 34vh;
+}
+@media (max-height: 623px) {
+  min-height: 250px;
+}
+@media (max-width: 414px) {
+  width: 39vw;
+}
+
+@media (max-width: 398px) {
+  width: 44vw;
 }
 @media (max-width: 386px) {
-  width: 40vw;
+  width: 44vw;
 }
 
   .image {

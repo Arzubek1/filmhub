@@ -4,7 +4,11 @@ $fullBG: #10002b;
     padding-block: 8rem;
     background: $fullBG;
     min-height: 90vh;
+    @media (max-width: 447px) {
+      padding-block: 4.3rem;
+    }
     h2{
+
       span{
         color: #f0a500;
       }
@@ -12,6 +16,10 @@ $fullBG: #10002b;
         padding-bottom: 4rem;
         font-size: 2rem;
         font-weight: 400;
+                 @media (max-width: 447px) {
+          font-size: 1rem;
+          padding-bottom: 1.8rem;
+    } 
     }
     .notFound {
   text-align: center;
@@ -46,6 +54,10 @@ $fullBG: #10002b;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
   justify-items: start; 
+  @media (max-width: 447px) {
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    
+  }
 }
 
 }
