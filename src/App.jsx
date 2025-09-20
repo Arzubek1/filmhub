@@ -4,7 +4,7 @@ import Header from "./components/layout/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import All from "./components/pages/main/All";
 import Movies from "./components/pages/movies/Movies";
-import MovieDetails from "./components/pages/movieDetails/movieDetails";
+import MovieDetails from "./components/pages/movieDetails/MovieDetails";
 import TVShows from "./components/pages/TVShows/TVShows";
 import Search from "./components/pages/searchpage/Search";
 import Footer from "./components/layout/Footer/Footer";
