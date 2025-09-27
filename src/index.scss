@@ -4,6 +4,23 @@
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+  background: #001c34;
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 .container {
   width: 90%;
   // max-width: 1400px;
